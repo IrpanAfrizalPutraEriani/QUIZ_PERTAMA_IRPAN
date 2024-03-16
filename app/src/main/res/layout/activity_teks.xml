@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Nama"
+            android:layout_width="261dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/alfa_slab_one"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:textSize="25sp"
+            android:text="Irpan Afrizal Quiz 1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/Deskripsi"
+            android:layout_width="379dp"
+            android:layout_height="433dp"
+            android:layout_marginTop="164dp"
+            android:fontFamily="@font/acme"
+            android:gravity="clip_horizontal"
+            android:scaleType="fitCenter"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/Nama"
+            app:layout_constraintStart_toStartOf="@+id/Nama"
+            app:layout_constraintTop_toTopOf="@+id/Nama" />
+
+        <TextView
+            android:id="@+id/Harga"
+            android:layout_width="314dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="464dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:textSize="15sp"
+            android:text="Terima Kasih Telah Belanja Di toko kami !!👋👋 "
+            app:layout_constraintEnd_toEndOf="@+id/Deskripsi"
+            app:layout_constraintHorizontal_bias="0.477"
+            app:layout_constraintStart_toStartOf="@+id/Deskripsi"
+            app:layout_constraintTop_toTopOf="@+id/Deskripsi" />
+
+        <Button
+            android:id="@+id/TombolKirim"
+            android:layout_width="176dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="168dp"
+            android:fontFamily="@font/anton"
+            android:gravity="center"
+            android:text="SHARE"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toEndOf="@+id/Harga"
+            app:layout_constraintHorizontal_bias="0.565"
+            app:layout_constraintStart_toStartOf="@+id/Harga"
+            app:layout_constraintTop_toTopOf="@+id/Harga" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

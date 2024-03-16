@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/ShowcardTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Irpan Afrizal Quiz 1"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="388dp"
+        android:layout_height="594dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/oval_button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.059"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/Nama"
+        android:layout_width="377dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="59dp"
+        android:gravity="center|left"
+        android:text="@string/nama_konsumen"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/Konsumen"
+        android:layout_width="377dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:hint="@string/konsumen"
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nama"
+        tools:ignore="MissingConstraints,TextFields" />
+
+    <TextView
+        android:id="@+id/TeksM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Jenis Kartu MemberShip : "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Konsumen" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="348dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:background="@drawable/oval_radio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeksM"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <RadioButton
+            android:id="@+id/rbPLATINUM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/platinum" />
+
+        <RadioButton
+            android:id="@+id/rbPREMIUM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:text="@string/Premium" />
+
+        <RadioButton
+            android:id="@+id/rbVIP"
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/vip" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/TeksK"
+        android:layout_width="144dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="1dp"
+        android:text=" Kode Barang : "
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/TeksKode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/TeksKode"
+        android:layout_width="377dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="44dp"
+        android:hint="Masukkan Kode "
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="MissingConstraints,TextFields" />
+
+    <TextView
+        android:id="@+id/TeksB"
+        android:layout_width="144dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="1dp"
+        android:text=" Jumlah barang : "
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/TeksKode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeksKode"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <EditText
+        android:id="@+id/TeksJumlahBarang"
+        android:layout_width="377dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="4dp"
+        android:hint="Masukkan jumlah "
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeksB"
+        tools:ignore="MissingConstraints,TextFields" />
+
+    <Button
+        android:id="@+id/TombolProses"
+        android:layout_width="156dp"
+        android:layout_height="58dp"
+        android:text= "PROSES"
+        android:background="@drawable/oval_radio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TeksJumlahBarang"
+        app:layout_constraintVertical_bias="0.25" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

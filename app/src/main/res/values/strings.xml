@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quiz Pertama PBer</string>
+    <string name="nama_konsumen"> Nama konsumen : \n</string>
+    <string name="konsumen">Nama Pembeli\n</string>
+    <string name="platinum">Platinum</string>
+    <string name="Premium">Premium</string>
+    <string name="vip">VIP</string>
+</resources>
